@@ -1,0 +1,10 @@
+/* Font Families */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Major+Mono+Display&family=Montserrat&family=Neonderthaw&family=Playfair+Display&family=Poppins&display=swap');
+
+/* Universal CSS properties */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
