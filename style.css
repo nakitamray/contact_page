@@ -8,26 +8,136 @@
     margin: 0;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
-}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 869px) {
+    body {
+        background-color: #ececec;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        z-index: 2;
+    }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-}
+    .content {
+        flex-basis: 30%;
+        z-index: 2;
+    }
 
+    table {
+        border-collapse: collapse;
+    }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
+    td {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    h1, h2 {
+        font-family: "DM Serif Display";
+        color: black;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-family: 'Poppins';
+    }
+
+    textarea {
+        font-family: 'poppins';
+        border: none;
+        border-bottom: 2px solid darkslategray;
+        width: 70vw;
+        margin-top: 2vw;
+        font-size: 2.5vw;
+        background-color: #292929;
+        color: #c4c4c4;
+        border-radius: 10px 0px 10px 0px;
+        padding: 1vw;
+        height: 30vw;
+    }
+
+    input {
+        display: flex;
+        border: none;
+        border-bottom: 2px solid darkslategray;
+        color: #555555;
+        background-color: #ececec;
+        font-family: 'poppins';
+        width: 70vw;
+        height: 4vw;
+        margin-top: 2vw;
+        font-size: 2.5vw;
+    }
+
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+    #submit_btn {
+        display: flex;
+        justify-content: center;
+        margin-left: 25vw;
+        border: 2px solid darkslategray;
+        color: #555555;
+        background-color: #ececec;
+        font-family: 'poppins';
+        width: auto;
+        height: auto;
+        padding: 1vw 1.5vw 1vw 1.5vw;
+        border-radius: 10px 0px 10px 0px;
+        margin-top: 1vw;
+    }
+
+    #submit_btn:hover {
+        background-color: #303030;
+        border: 2px solid #303030;
+        color: whitesmoke;
+    }
+
+    #conformation {
+        text-align: center;
+        width: 40vw;
+        font-size: 5vw;
+        display: block;
+        margin-top: -50vw;
+        margin-left: 45vw;
+        background-color: #252525ce;
+        padding: 2vw;
+        font-family: 'Bebas Neue';
+        z-index: 6;
+        color: white;
+        position: relative;
+        letter-spacing: 0.1vw;
+        border-radius: 40px 0px 40px 0px;
+    }
+
+    img {
+        margin-left: 10vw;
+        margin-top: 10vw;
+        height: 100vw;
+        z-index: 1;
+        position: relative;
+    }
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 870px) {
 
     body {
         background-color: #ececec;
