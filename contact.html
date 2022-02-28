@@ -38,20 +38,20 @@
         </div>
 
         <div class = "content">
-            <form action = "confimation.html" target = "_blank">
+            <form id = "contactForm" name = "contactForm" onsubmit="return validateForm();" target = "_self">
                 <label for = "name"></label>
-                <input type = "text" id ="name" name ="full name" placeholder = "what do people call you? (its called a name)">
+                <input type = "text" id ="name" name ="fullName" placeholder = "what do people call you? (its called a name)">
                 <br><br>
     
                 <label for = "email"></label>
-                <input type = "text" id ="email" name ="email address" placeholder = "where can I email you back?">
+                <input type = "text" id ="email" name ="emailAddress" onchange = "return validateEmail()" placeholder = "where can I email you back?">
                 <br><br>
         
                 <label for = "message"></label>
-                <textarea id ="message" name ="message box" placeholder="what's on your your mind?"></textarea>
+                <textarea id ="message" name ="messageBox" placeholder="what's on your your mind?"></textarea>
                 <br><br>
         
-                <input id = "submit_btn" onclick="validateForm();" type = "submit"/>
+                <input id = "submit_btn" type = "submit"/>
             </form>
         </div>
     </div>
