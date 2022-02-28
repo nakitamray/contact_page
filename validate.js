@@ -1,5 +1,5 @@
 function validateForm() {
-    
+
     // validate name
     if (document.contactForm.fullName.value == "") {
         alert("Please enter a name");
@@ -22,11 +22,14 @@ function validateForm() {
         return false;
     }
 
+    // complete action to confirmation page
     else {
-        document.getElementById('contactForm').action = "confimation.html";
+        document.getElementById('contactForm').action = "confirmation.html";
         return true;
     }
 }
+
+// check to validate if email is in correct format
 
 function validateEmail(){
 
